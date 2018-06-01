@@ -10,6 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func TestNative(_ sender: Any) {
+        
+        
+    }
+    @IBAction func TestCreateLayerObjC(_ sender: Any) {
+        if let foundView = view.viewWithTag(2) {
+            let helper = ObjHelper()
+            //foundView.backgroundColor = UIColor.yellow
+            helper.initCA(foundView)
+        }
+        
+        
+       
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

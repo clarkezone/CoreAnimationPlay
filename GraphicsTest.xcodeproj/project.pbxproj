@@ -14,6 +14,8 @@
 		1A84D6E620C0C69D00B569AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A84D6E420C0C69D00B569AE /* LaunchScreen.storyboard */; };
 		1A84D6F120C0C69D00B569AE /* GraphicsTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84D6F020C0C69D00B569AE /* GraphicsTestTests.swift */; };
 		1A84D6FC20C0C69D00B569AE /* GraphicsTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A84D6FB20C0C69D00B569AE /* GraphicsTestUITests.swift */; };
+		1A84D70C20C0C8F200B569AE /* cpptest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A84D70A20C0C8F200B569AE /* cpptest.cpp */; };
+		1A84D70E20C0CA2800B569AE /* ObjHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A84D70D20C0CA2800B569AE /* ObjHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		1A84D6F720C0C69D00B569AE /* GraphicsTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphicsTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A84D6FB20C0C69D00B569AE /* GraphicsTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsTestUITests.swift; sourceTree = "<group>"; };
 		1A84D6FD20C0C69D00B569AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A84D70920C0C8F100B569AE /* GraphicsTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphicsTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A84D70A20C0C8F200B569AE /* cpptest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cpptest.cpp; sourceTree = "<group>"; };
+		1A84D70B20C0C8F200B569AE /* cpptest.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpptest.hpp; sourceTree = "<group>"; };
+		1A84D70D20C0CA2800B569AE /* ObjHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 				1A84D6E220C0C69D00B569AE /* Assets.xcassets */,
 				1A84D6E420C0C69D00B569AE /* LaunchScreen.storyboard */,
 				1A84D6E720C0C69D00B569AE /* Info.plist */,
+				1A84D70A20C0C8F200B569AE /* cpptest.cpp */,
+				1A84D70B20C0C8F200B569AE /* cpptest.hpp */,
+				1A84D70920C0C8F100B569AE /* GraphicsTest-Bridging-Header.h */,
+				1A84D70D20C0CA2800B569AE /* ObjHelper.m */,
 			);
 			path = GraphicsTest;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 				TargetAttributes = {
 					1A84D6D720C0C69A00B569AE = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					1A84D6EB20C0C69D00B569AE = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -256,6 +267,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A84D70C20C0C8F200B569AE /* cpptest.cpp in Sources */,
+				1A84D70E20C0CA2800B569AE /* ObjHelper.m in Sources */,
 				1A84D6DE20C0C69A00B569AE /* ViewController.swift in Sources */,
 				1A84D6DC20C0C69A00B569AE /* AppDelegate.swift in Sources */,
 			);
@@ -430,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GraphicsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -438,6 +452,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.clarkezone.GraphicsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GraphicsTest/GraphicsTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GraphicsTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.clarkezone.GraphicsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GraphicsTest/GraphicsTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
