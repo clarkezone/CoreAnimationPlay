@@ -20,9 +20,6 @@ class ViewController: UIViewController {
             //foundView.backgroundColor = UIColor.yellow
             helper.initCA(foundView)
         }
-        
-        
-       
     }
     
     override func viewDidLoad() {
